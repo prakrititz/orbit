@@ -34,14 +34,14 @@ const FontLoader = () => {
 const CSS = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --purple: #9200db;
-    --purple-dim: rgba(146,0,219,0.15);
-    --purple-border: rgba(146,0,219,0.28);
+    --purple: #e76fff;
+    --purple-dim: rgba(186, 49, 255, 0.52);
+    --purple-border: rgba(123, 255, 109, 0);
     --white: #f0eaf8;
     --off: #b8a8d0;
-    --muted: #6b5980;
+    --muted: #beff7e;
     --bg: #000010;
-    --surface: rgba(255,255,255,0.04);
+    --surface: rgba(255, 4, 4, 0.57);
     --font-display: 'Handjet', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     --page-x: clamp(1rem, 5vw, 4rem);
@@ -592,7 +592,7 @@ export default function Orbit() {
             <button className="o-btn-ghost">View on GitHub</button>
           </div>
           <div className="o-stats rev">
-            {[["25s","avg deploy time"],["0","config files"],["∞","projects"],["$0","cloud cost"]].map(([n,l])=>(
+            {[["25s","avg deploy time"],["0","config files"],["$0","cloud cost"]].map(([n,l])=>(
               <div key={l}>
                 <div className="o-stat-num"><em>{n}</em></div>
                 <div className="o-stat-lbl">{l}</div>
@@ -702,7 +702,7 @@ export default function Orbit() {
 
       {/* ── FOOTER ── */}
       <footer className="o-footer">
-        <div className="o-footer-logo">⬡ <em>ORBIT</em></div>
+        <div className="o-footer-logo">ORBIT</div>
         <div>Your device. Your server. Your rules.</div>
         <div className="o-footer-links">
           <span>GitHub</span><span>Docs</span><span>Changelog</span>
